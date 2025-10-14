@@ -1,0 +1,65 @@
+.body{
+    background-image: url("./Images/Images/p1.jpg"); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keep background fixed during scrolling */
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+}
+
+/* Center the container */
+.login-container {
+    height: 92.1vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for the login box */
+.login-box {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.login-box:hover{
+    transform: scale(1.02);
+}
+
+/* Styling for the logo */
+.loginlogo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4caf50; /* Green color for GreenHaven */
+}
+
+/* Styling for the login button */
+
+/* Additional general styles */
+.input-group-text {
+    background-color: #4caf50;
+}
+
+.input-group input {
+    border-left: none;
+}
+
+.text-decoration-none {
+    text-decoration: none !important;
+    color: #4caf50;
+}
+
+.btn{
+    background-color: #4caf50;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: #2c9930;
+    color: white;
+}

@@ -1,0 +1,432 @@
+/* Admin Dashboard Container */
+.admin-panel-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Dashboard Header */
+.admin-panel-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.admin-panel-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Sidebar & Navigation */
+.admin-panel-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.admin-panel-nav-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.admin-panel-nav-btn:hover {
+    background-color: #43bc5f;
+    transform: scale(1.05);
+}
+
+.admin-panel-nav-btn:active {
+    background-color: #1e7e34;
+}
+
+/* Main Content Area */
+.admin-panel-content {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    min-height: 300px;
+}
+
+/* Section Content */
+.admin-panel-section {
+    text-align: left;
+    padding: 15px;
+}
+
+.admin-panel-section-title {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.admin-panel-section-text {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Container for the users table */
+.registered-users-container {
+    width: 100%;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table wrapper to enable scrolling if needed */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+/* Styling for the table */
+.registered-users-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table header styling */
+.registered-users-table thead {
+    background: #28a745;
+    color: white;
+}
+
+.registered-users-table th, 
+.registered-users-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Row hover effect */
+.registered-users-table tbody tr:hover {
+    background: #f1f1f1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .registered-users-table th, 
+    .registered-users-table td {
+        padding: 8px;
+    }
+}
+
+
+/* Product Management Section */
+.admin-product-management {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Product List */
+.admin-product-list {
+    width: 100%;
+    max-width: 1060px;
+    margin-top: 10px;
+}
+
+.product-input{
+    width: 250px;
+    padding: 5px 5px;
+}
+
+
+.admin-product-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.admin-product-card:hover {
+    transform: scale(1.02);
+}
+
+.admin-product-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.admin-product-info {
+    flex: 1;
+    text-align: left;
+}
+
+.admin-product-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-edit-btn, .admin-delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-edit-btn {
+    background-color: #ffc107;
+    color: black;
+}
+
+.admin-edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.admin-delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.admin-delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admin-panel-container {
+        width: 95%;
+    }
+
+    .admin-panel-navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .admin-panel-nav-btn {
+        width: 80%;
+    }
+
+    .admin-product-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .admin-product-info {
+        text-align: center;
+    }
+}
+
+/* Contact Section */
+.contact-messages-container {
+    /* margin: 20px auto; */
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-messages-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-messages-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fafafa;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact-messages-table thead {
+    background-color: #28a745;
+    color: white;
+}
+
+.contact-messages-table th, 
+.contact-messages-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-messages-table th {
+    font-size: 16px;
+}
+
+.contact-messages-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.contact-messages-table td {
+    color: #333;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .contact-messages-table {
+        font-size: 12px;
+    }
+
+    .contact-messages-table th, 
+    .contact-messages-table td {
+        padding: 8px;
+    }
+}
+
+/* Table styling */
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.orders-table th,
+.orders-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Header cell styling */
+.table-header {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Row styling */
+.order-row:hover {
+    background-color: #f1f1f1;
+}
+
+.order-id, .user-id, .total-price, .payment-status, .delivery-address {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Style for total price with currency */
+.total-price {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+/* Style for payment status */
+.payment-status {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #e74c3c;
+}
+
+/* Delivery address styling */
+.delivery-address {
+    font-size: 13px;
+    color: #7f8c8d;
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 768px) {
+    .orders-table th,
+    .orders-table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .admin-dashboard {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .dashboard-title {
+        font-size: 20px;
+    }
+}
+
+/* Sales Report Section */
+.sales-report-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sales-report-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.sales-summary {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.sales-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+.sales-graph-container {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 300px;
+}
+
+.sales-report-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.sales-report-table th, .sales-report-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.sales-report-table th {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.sales-report-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.sales-report-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.sales-report-table td {
+    font-size: 14px;
+    color: #555;
+}
