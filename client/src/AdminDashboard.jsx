@@ -56,7 +56,7 @@ function AdminDashboard() {
 
     // Fetch users and generate graph data
     useEffect(() => {
-        axios.get("http://localhost:3001/getUsers")
+        axios.get("https://green-heaven-plant-selling-web-appl.vercel.app/getUsers")
             .then(response => {
                 setUsers(response.data);
                 generateGraphData(response.data);
@@ -81,7 +81,7 @@ function AdminDashboard() {
 
     // Fetch contacts
     useEffect(() => {
-        axios.get("http://localhost:3001/getContacts")
+        axios.get("https://green-heaven-plant-selling-web-appl.vercel.app/getContacts")
             .then(response => {
                 setContacts(response.data);
             })
@@ -90,7 +90,7 @@ function AdminDashboard() {
 
     // Fetch orders and generate orders graph data
     useEffect(() => {
-        axios.get("http://localhost:3001/getOrders")  // Assuming you have this endpoint to fetch orders
+        axios.get("https://green-heaven-plant-selling-web-appl.vercel.app/getOrders")  // Assuming you have this endpoint to fetch orders
             .then(response => {
                 setOrders(response.data);
                 generateOrdersGraphData(response.data);
