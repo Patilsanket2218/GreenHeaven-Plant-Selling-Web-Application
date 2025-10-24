@@ -13,7 +13,7 @@ const Order = require('./models/Order'); // Adjust path as necessary
 
 
 const morgan = require("morgan");
-const helmet=require("helmet");
+const helmet = require("helmet");
 
 const app = express();
 app.use(express.json());
@@ -52,6 +52,11 @@ app.post("/Signup", (req, res) => {
   UserModel.create(req.body)
     .then((users) => res.json(users))
     .catch((err) => res.json(err));
+});
+
+app.get("/", (req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.end('Hello World!');
 });
 
 // Contact API
@@ -170,23 +175,23 @@ app.get("/api/reviews/:productId", async (req, res) => {
 
 app.post("/purchaseProduct", async (req, res) => {
   try {
-      const { productId, quantity } = req.body;
+    const { productId, quantity } = req.body;
 
-      const product = await ProductModel.findById(productId);
-      if (!product) {
-          return res.status(404).json({ message: "Product not found" });
-      }
+    const product = await ProductModel.findById(productId);
+    if (!product) {
+      return res.status(404).json({ message: "Product not found" });
+    }
 
-      if (product.stock < quantity) {
-          return res.status(400).json({ message: "Not enough stock available" });
-      }
+    if (product.stock < quantity) {
+      return res.status(400).json({ message: "Not enough stock available" });
+    }
 
-      product.stock -= quantity;
-      await product.save();
+    product.stock -= quantity;
+    await product.save();
 
-      res.json({ message: "Purchase successful", updatedStock: product.stock });
+    res.json({ message: "Purchase successful", updatedStock: product.stock });
   } catch (error) {
-      res.status(500).json({ message: "Error processing purchase", error });
+    res.status(500).json({ message: "Error processing purchase", error });
   }
 });
 
@@ -194,11 +199,11 @@ app.post("/purchaseProduct", async (req, res) => {
 // Get Orders Route
 app.get('/getOrders', async (req, res) => {
   try {
-      const orders = await Order.find(); // Assuming 'Order' is the Mongoose model
-      res.status(200).json(orders);
+    const orders = await Order.find(); // Assuming 'Order' is the Mongoose model
+    res.status(200).json(orders);
   } catch (err) {
-      console.error(err);
-      res.status(500).send('Error retrieving orders');
+    console.error(err);
+    res.status(500).send('Error retrieving orders');
   }
 });
 
