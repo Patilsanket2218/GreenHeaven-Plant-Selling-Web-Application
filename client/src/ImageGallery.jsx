@@ -1,5 +1,5 @@
 // NavbarImages
-import CartLogo from "./Images/Images/Cart-Logo.png";
+import CartLogo from "./Images/Images/Cart.png";
 
 
 // HomePageImages
