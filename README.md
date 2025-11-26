@@ -1,158 +1,73 @@
-# 🏺 Artisans: Global Handcrafted Goods Marketplace
+# 🌿 GreenHeaven – Plant Selling Web Application
 
+![GreenHeaven Banner](https://green-heaven-plant-selling-web-appl.vercel.app/assets/flower1-3zo3zgn1.jpg)
 
 ## 📝 Project Overview
 
-Artisans is a comprehensive e-commerce platform designed to celebrate and support global craftsmanship. Our mission is to create a vibrant marketplace that connects passionate artisans with art enthusiasts, providing a seamless and inspiring shopping experience for unique, handcrafted goods.
+GreenHeaven is a modern and intuitive plant-selling web application designed to make buying plants simple, enjoyable, and accessible for everyone. It offers a seamless platform where users can explore and purchase a wide variety of flower plants, vegetable plants, and fruit saplings, each presented with detailed profiles and care information. With its clean interface, smart browsing features, secure checkout, and personalized recommendations, GreenHeaven connects plant enthusiasts with trusted growers, making it easier than ever to bring nature into homes and gardens.
 
-### 🌍 Our Vision
+---
+
+## 🌍 Our Vision
 
 We believe in:
-- Empowering small-scale artisans worldwide
-- Preserving traditional crafting techniques
-- Promoting sustainable and ethical consumption
-- Creating a global community of makers and buyers
+- Bringing nature closer to every home  
+- Supporting trusted plant growers and nurseries  
+- Promoting sustainable and eco-friendly gardening  
+- Creating a community of plant lovers and gardening enthusiasts  
+
+---
 
 ## ✨ Key Features
 
-### 🛍️ For Buyers
-- **Diverse Catalog**: Explore handcrafted goods from multiple categories
-- **Advanced Discovery**: Intelligent search and filtering options
-- **Secure Transactions**: Integrated Stripe payments with robust security
-- **Community Insights**: Detailed product reviews and ratings
-- **Personalized Experience**: User profiles and recommendation engine
+### 🌱 For Buyers
+- **Wide Plant Collection**: Explore flowers, vegetable plants, fruit saplings, and indoor plants  
+- **Smart Search & Filters**: Browse plants by type, season, or care level  
+- **Secure Checkout**: Smooth transactions with payment gateway integration  
+- **Plant Care Info**: Sunlight needs, soil type, watering cycle & maintenance tips  
+- **User Profiles**: Manage orders, favorites, and personalized suggestions  
 
-### 🖌️ For Sellers
-- **Easy Onboarding**: Simple seller registration and product listing
-- **Sales Management**: Comprehensive order tracking and analytics
-- **Payment Integration**: Transparent and reliable payment processing
-- **Marketing Tools**: Promotional features to showcase artisan stories
+### 🌿 For Admin
+- **Product Management**: Add, edit, and delete plant listings  
+- **Stock Control**: Track plant availability in real-time  
+- **Order Handling**: Manage all customer orders efficiently  
+- **Admin Dashboard**: View analytics, sales reports, and user data  
+- **Marketing Tools**: Highlight seasonal offers and trending plants  
+
+---
 
 ## 🚀 Technical Architecture
 
-### Frontend Ecosystem
-- **React.js**: Component-based UI development
-- **React Router**: Smooth, dynamic navigation
-- **Axios**: Efficient API communication
-- **Tailwind CSS**: Responsive, utility-first styling
-- **Redux**: Centralized state management
+### 🖥️ Frontend
+- **React.js** – Component-driven UI  
+- **React Router** – Smooth page navigation  
+- **Axios** – API communication  
+- **Bootstrap CSS** – Responsive styling  
 
-### Backend Infrastructure
-- **Node.js & Express.js**: Scalable server-side application
-- **MongoDB (Mongoose)**: Flexible, document-oriented database
-- **JWT Authentication**: Secure user authorization
-- **Bcrypt**: Advanced password encryption
-
-### Integrated Services
-- **Stripe**: Payment processing
-- **Multer**: File upload management
-- **Nodemailer**: Transactional email communication
-
-## 🛠️ Development Setup
+### 🖧 Backend
+- **Node.js & Express.js** – Server-side REST API  
+- **MongoDB (Mongoose)** – NoSQL database for data storage
+- **Nodemon** – Automatically restarts the server on file changes
+ 
+### 🔗 Integrated Services
+- **Stripe / PayPal** – Payment processing  
+- **Multer** – Image upload management  
+- **Cloudinary / S3** – Optional cloud image hosting  
 
 ### Prerequisites
-
-Ensure you have the following installed:
-- Node.js (v16.0.0+)
-- MongoDB (v4.4+)
-- npm or Yarn
+Make sure you have:
+- Node.js (v16+)  
+- MongoDB (local or cloud)  
+- npm or Yarn  
 - Git
-
-### Installation Steps
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/vighneshparab/Artisans.git
-   cd Artisans
-   ```
-
-2. **Install Dependencies**
-   ```bash
-   # Backend dependencies
-   cd backend
-   npm install
-
-   # Frontend dependencies
-   cd ../frontend
-   npm install
-   ```
-
-3. **Configure Environment**
-   Create `.env` files in backend and frontend directories:
-
-   **Backend `.env`**:
-   ```ini
-   MONGO_URI=mongodb_connection_string
-   JWT_SECRET=secure_random_string
-   PORT=5000
-   STRIPE_SECRET_KEY=stripe_secret
-   NODEMAILER_EMAIL=your_email
-   NODEMAILER_PASSWORD=email_password
-   CORS_ORIGIN=http://localhost:3000
-   ```
-
-   **Frontend `.env`**:
-   ```ini
-   REACT_APP_API_URL=http://localhost:5000/api
-   REACT_APP_STRIPE_PUBLISHABLE_KEY=stripe_publishable_key
-   ```
-
-4. **Run the Application**
-   ```bash
-   # Start backend server
-   cd backend
-   npm run server
-
-   # In another terminal, start frontend
-   cd frontend
-   npm start
-   ```
-
-## 🔍 Project Structure
-
-```bash
-artisans-ecommerce/
-├── backend/
-│   ├── config/           # Environment & database configurations
-│   ├── controllers/      # Request handling logic
-│   ├── models/           # Mongoose schemas
-│   ├── routes/           # API endpoint definitions
-│   └── middleware/       # Authentication & validation middleware
-│
-└── frontend/
-    ├── public/           # Static assets
-    └── src/
-        ├── components/   # Reusable React components
-        ├── pages/        # Top-level page components
-        ├── redux/        # State management
-        └── utils/        # Utility functions
-```
-
-## 🤝 Contributing Guidelines
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/innovative-feature`)
-3. **Commit** changes (`git commit -m 'Add innovative feature'`)
-4. **Push** to branch (`git push origin feature/innovative-feature`)
-5. Open a **Pull Request**
-
-### Contribution Expectations
-- Follow existing code style
-- Write unit tests for new features
-- Update documentation
-- Ensure code passes all CI checks
-
-## 📄 Licensing
-
-This project is open-source and available under the MIT License. See `LICENSE` file for complete details.
 
 ## 📞 Contact & Support
 
 **Sanket Manohar Patil**
 - 📧 Email: sp5768528@gmail.com
 - 🔗 GitHub: https://github.com/Patilsanket2218
-- 🔗 Live link: [https://github.com/Patilsanket2218](https://artisans-9zib.vercel.app/)
-- 🌐 Project Repository: [Artisans Marketplace](https://github.com/Patilsanket2218/Artisans)
+- 🔗 Live link: https://green-heaven-plant-selling-web-appl.vercel.app/
+- 🌐 Project Repository: https://github.com/Patilsanket2218/GreenHeaven-Plant-Selling-Web-Application
 
 ## 🙏 Acknowledgements
 
@@ -161,8 +76,6 @@ Special thanks to the open-source community and the incredible technologies that
 - Node.js
 - MongoDB
 - Stripe
-- Tailwind CSS
+- Express.js
 
----
 
-🚀 **Craft Your Dreams, Share Your Passion!** 🎨🛍️
