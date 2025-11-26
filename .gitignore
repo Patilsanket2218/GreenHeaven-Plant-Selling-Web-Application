@@ -1,0 +1,5 @@
+./client/node_modules
+./client/.gitignore
+.vscode
+./server/.env
+/server/node_modules

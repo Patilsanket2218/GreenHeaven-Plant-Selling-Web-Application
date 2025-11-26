@@ -1,0 +1,46 @@
+.body{
+  background-image: url("./images/Images/p1.jpg"); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keep background fixed during scrolling */
+  margin: 0; /* Remove any default margins */
+  padding: 0; /* Remove any default padding */
+}
+
+.signup-container {
+    height: 92.1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .signup-box {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s;
+  }
+
+  .signup-box:hover{
+    transform: scale(1.02);
+  }
+
+  /* .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   */
+  .signup-btn {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+  }
+  

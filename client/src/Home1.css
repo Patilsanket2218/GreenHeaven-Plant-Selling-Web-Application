@@ -1,0 +1,314 @@
+/* import explorBg from '/Images/p3.jpg';  */
+
+
+body {
+  background-color: #ebebeb;
+  /* background-image: url(about-bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white; */
+}
+
+.nav-link:hover {
+  background-color: rgb(232, 232, 232);
+}
+
+  /* position: fixed; */
+  /* top: 0;
+  width: 100%;
+  z-index: 1050; */
+/* } */
+
+.login-btn {
+  color: green;
+  text-decoration: none;
+}
+
+.login-btn:hover {
+  color: white;
+
+}
+
+.ci {
+  height: 92vh;
+  background-color: #333;
+  position: relative;
+}
+
+.ci img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cc {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  right: 10%;
+  z-index: 10;
+  color: #fff;
+  text-align: left;
+  animation: slideInUp 2s ease-in-out;
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 14px;
+    bottom: 10%;
+  }
+}
+
+.label {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: xx-large;
+  font-weight: 800;
+  opacity: 1;
+  /* Initially hidden */
+  transform: translateY(50px);
+  /* Start off below the viewport */
+  transition: all 0.5s ease-in-out;
+  /* Smooth transition */
+}
+
+.label.visible {
+  opacity: 1;
+  /* Fully visible */
+  transform: translateY(0);
+  /* Move to its original position */
+}
+
+/* Animation for the product cards */
+.plant-card {
+  opacity: 1;
+  /* Initially hidden */
+  transform: translateY(50px);
+  /* Start off below the viewport */
+  transition: all 0.5s ease-in-out;
+  /* Smooth transition */
+}
+
+.plant-card.visible {
+  opacity: 1;
+  /* Fully visible */
+  transform: translateY(0);
+  /* Move to its original position */
+}
+
+.left-block-img {
+  height: 100%;
+  /* Full height matching parent container */
+  object-fit: cover;
+}
+
+.right-block {
+  /* margin: 0px; */
+  margin-bottom: 84px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 100%; */
+  /* Match height with left block */
+}
+
+.plant-card {
+  flex: 1 1 calc(33.33% - 1rem);
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.plant-img {
+  height: 150px;
+  /* Adjust to fit the block */
+  object-fit: cover;
+}
+
+.plant-info {
+  text-align: center;
+}
+
+/* Ensuring full height for the image block */
+@media (min-width: 768px) {
+  .left-block-img {
+    height: 500px;
+    /* Set a fixed height for larger screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .left-block-img {
+    height: 300px;
+    /* Adjust the height for smaller screens */
+  }
+}
+
+.background-image {
+  background-image: url("./images/Images/p3.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-variant: inherit;
+  font-size: xx-large;
+  font-weight: 800;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 5px;
+  word-spacing: 3px;
+  animation: fadeInOut 2s ease-in-out infinite;
+  /* Reduced from 5s to 2s */
+}
+
+.btn1 {
+  background-color: rgb(33, 62, 33);
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  color: white;
+  font-size: large;
+  animation: pulse 2s infinite;
+}
+
+.btn1:hover {
+  color: white;
+  background-color: rgb(57, 105, 57);
+  border-color: white;
+}
+
+.para {
+  font-size: small;
+  font-weight: 400;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .background-image {
+    height: 50vh;
+  }
+}
+
+.features-section {
+  background-color: #f9f9f9; /* Light blue background */
+  padding: 50px 0;
+}
+
+.label-3{
+  font-size: xx-large;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+
+.feature-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card i {
+  font-size: 3rem;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+/* "Our Products" section background */
+.product-section {
+  background-color: #f4f4f4; /* Light gray background */
+  padding: 50px 0;
+}
+
+.accordion-button {
+  background-color: #ad6734;
+  /* SaddleBrown */
+  color: white;
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ad6734;
+  /* Sienna */
+  color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  /* Remove default focus outline */
+}
+
+.accordion-body {
+  background-color: #F5DEB3;
+  /* Wheat background */
+  color: #4B2E2E;
+  /* Dark brown text */
+}
+
+.label-1 {
+  color: #333;
+  padding-bottom: 40px;
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+

@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.about-page {
+    padding: 20px;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.hero-section .title {
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+.hero-section .subtitle {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    color: white;
+}
+
+.hero-section .tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 15px;
+    color: white;
+}
+
+.content-section {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.content-section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+
+.categories {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flip-card-front {
+    background: #f9f9f9;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flip-card-back {
+    background-color: #4caf50;
+    color: white;
+    transform: rotateY(180deg);
+    flex-direction: column;
+    padding: 20px;
+}
+
+.flip-card-back > p{
+    color: white;
+}
+
+.mission-section {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.mission-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.mission-section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.inspirational-quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    margin-top: 20px;
+}
+
+.cta-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.shop-now-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.shop-now-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}

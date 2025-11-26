@@ -1,0 +1,125 @@
+/* Footer Styles */
+footer {
+    background-color: #28342b;
+    color: white;
+    padding: 40px 0;
+    margin-top: 50px;
+    z-index:1;
+
+}
+
+/* Footer Container */
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        text-align: left;
+    }
+}
+
+/* Footer Sections */
+.footer-section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffd700;
+}
+
+/* Read More Link */
+.read-more {
+    display: inline-block;
+    margin-top: 5px;
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+    margin-top: 10px;
+}
+
+.newsletter-form input {
+    width: 80%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.newsletter-form button {
+    margin-top: 8px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #ffd700;
+    color: #1f5135;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #e6c200;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .social-icons {
+        justify-content: flex-start;
+    }
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffd700;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
