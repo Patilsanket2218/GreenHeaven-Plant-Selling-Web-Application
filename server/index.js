@@ -27,7 +27,7 @@ app.use("/api/checkout", checkoutRoutes);
 // Use order routes
 app.use("/api/orders", orderRoutes);
 
-mongoose.connect("mongodb://127.0.0.1:27017/user");
+mongoose.connect("mongodb+srv://sp5768528_db_user:GEiGFLW4hDsF2Ryy@greenheaven.cw3vyed.mongodb.net/?appName=GreenHeaven");
 
 // Login API
 app.post("/Login", (req, res) => {
