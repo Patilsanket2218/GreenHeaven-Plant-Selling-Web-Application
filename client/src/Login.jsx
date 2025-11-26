@@ -28,7 +28,7 @@ function Login() {
     }
 
     try {
-      const response = await axios.post("http://localhost:3001/Login", {
+      const response = await axios.post("https://greenheaven-plant-selling-web-application.onrender.com/Login", {
         email,
         password,
       });

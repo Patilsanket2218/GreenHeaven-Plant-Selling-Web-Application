@@ -22,7 +22,7 @@ function Signup() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3001/Signup', { name, email, password})
+        axios.post('https://greenheaven-plant-selling-web-application.onrender.com/Signup', { name, email, password})
             .then(result => {
                 console.log(result)
                 navigate('/Login')

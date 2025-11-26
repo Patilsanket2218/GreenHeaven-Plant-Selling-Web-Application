@@ -32,7 +32,7 @@ const CartPage = () => {
 
     const fetchCart = async () => {
         try {
-            const response = await axios.get(`http://localhost:3001/api/cart/${userId}`);
+            const response = await axios.get(`https://greenheaven-plant-selling-web-application.onrender.com/api/cart/${userId}`);
             const products = response.data.products || [];
             setCartItems(products);
             calculateTotal(products);
@@ -49,7 +49,7 @@ const CartPage = () => {
 
     const removeFromCart = async (productId) => {
         try {
-            await axios.delete(`http://localhost:3001/api/cart/${userId}/${productId}`);
+            await axios.delete(`https://greenheaven-plant-selling-web-application.onrender.com/api/cart/${userId}/${productId}`);
             fetchCart();
         } catch (error) {
             console.error("Error removing product:", error);
@@ -64,7 +64,7 @@ const CartPage = () => {
         }
     
         try {
-            await axios.put(`http://localhost:3001/api/cart/${userId}`, {
+            await axios.put(`https://greenheaven-plant-selling-web-application.onrender.com/api/cart/${userId}`, {
                 productId,
                 quantity,
             });
@@ -84,7 +84,7 @@ const CartPage = () => {
         }
 
         try {
-            const response = await axios.post("http://localhost:3001/api/cart/checkout", {
+            const response = await axios.post("https://greenheaven-plant-selling-web-application.onrender.com/api/cart/checkout", {
                 userId,
                 deliveryAddress,
                 paymentMethod,

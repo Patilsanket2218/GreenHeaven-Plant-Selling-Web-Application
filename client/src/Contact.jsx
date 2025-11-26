@@ -25,7 +25,7 @@ function Contact() {
             return;
         }
 
-        axios.post("http://localhost:3001/Contact", { name1, email1, mobile, message1 }) // Sending mobile to backend
+        axios.post("https://greenheaven-plant-selling-web-application.onrender.com/Contact", { name1, email1, mobile, message1 }) // Sending mobile to backend
             .then(() => {
                 setShowPopup(true);
             })
